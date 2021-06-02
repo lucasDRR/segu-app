@@ -1,0 +1,12 @@
+.router-link-active {
+    background-color: crimson;
+    color: darkgreen;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.user-type-btn {
+    margin-left: 4px;
+}
