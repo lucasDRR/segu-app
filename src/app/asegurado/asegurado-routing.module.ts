@@ -6,8 +6,12 @@ import { AseguradoComponent } from './asegurado.component';
 const routes: Routes = [
   { path: '', component: AseguradoComponent, 
     children: [
-      {path: '', component: AseguradoInfoComponent },
-    ]}
+      { path: '', component: AseguradoInfoComponent },
+    //  { path: '/:id', component: AseguradoDetailsComponent },
+    //  { path: '/:id/update', component: AseguradoUpdateComponent }
+    //  { path: '/:id/delete', component: AseguradoDeleteComponent }
+    ]
+  }
 ];
 
 @NgModule({

@@ -1,6 +1,7 @@
 .router-link-active {
     background-color: crimson;
-    color: darkgreen;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 .example-spacer {
