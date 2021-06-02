@@ -9,3 +9,8 @@
     background-image: url('../../../../assets/perfil-avatar-hombre.jpg');
     background-size: cover;
 }
+
+
+.aseg-info-p:first-child {
+    margin-top: 1rem;
+}
