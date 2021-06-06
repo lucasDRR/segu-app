@@ -1,0 +1,52 @@
+.pol-detail {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.contenido{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.cover-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.amount-title {
+    font-size: 0.5;
+    color: gray;
+}
+
+.pay-sub-title {
+    font-size: 0.5;
+    color: gray;
+}
+
+.total-amount {
+    font-size: 2rem;
+    color: blueviolet;
+    text-align: center;
+}
+
+.pay-amount {
+    font-size: 2rem;
+    color: blueviolet;
+    text-align: center;
+}
+
+.pay-type {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: inline;
+    margin-right: 15px;
+}
+
+.edit-btn {
+    color: crimson;
+}
