@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aseg-pol',
@@ -16,7 +17,7 @@ export class AsegPolComponent implements OnInit {
     {"id": "04", "cover": "vida plus", "sumaaseg": "$ 300.000"}
   ];
 
-  constructor() { }
+  constructor(private router: Router ) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +28,10 @@ export class AsegPolComponent implements OnInit {
 
   updatePoliza(data: any){
     console.log("modificar "+data.id);
+
+    let idNum =  parseInt(data.id, 10);
+
+    this.router.navigate(['asegurado/poliza', idNum]);
   }
 
 }

@@ -7,6 +7,10 @@ import { AseguradoComponent } from './asegurado.component';
 import { AseguradoInfoComponent } from './asegurado-info/asegurado-info.component';
 import { AsegDataComponent } from './asegurado-info/aseg-data/aseg-data.component';
 import { AsegPolComponent } from './asegurado-info/aseg-pol/aseg-pol.component';
+import { PolizaComponent } from './poliza/poliza.component';
+import { PolizaDetailsComponent } from './poliza/poliza-details/poliza-details.component';
+import { PolizaBenefComponent } from './poliza/poliza-benef/poliza-benef.component';
+import { FakeLoginComponent } from './fake-login/fake-login.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { AsegPolComponent } from './asegurado-info/aseg-pol/aseg-pol.component';
     AseguradoComponent,
     AseguradoInfoComponent,
     AsegDataComponent,
-    AsegPolComponent
+    AsegPolComponent,
+    PolizaComponent,
+    PolizaDetailsComponent,
+    PolizaBenefComponent,
+    FakeLoginComponent
   ],
   imports: [
     CommonModule,

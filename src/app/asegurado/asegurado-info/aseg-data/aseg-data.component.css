@@ -1,8 +1,8 @@
 .aseg-data-card {
     width: 90%;
     min-height: auto;
-    padding: 1rem;
     margin: 0px auto;
+    box-sizing: border-box;
 }
 
 .avatar-card-image {
