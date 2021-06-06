@@ -1,0 +1,42 @@
+<table mat-table [dataSource]="datos" class="mat-elevation-z8">
+
+    <!-- Columna numero -->
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+  
+    <!-- Columna cobertura -->
+    <ng-container matColumnDef="apellido">
+      <th mat-header-cell *matHeaderCellDef> Apellido </th>
+      <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+    </ng-container>
+  
+    <!-- Columna suma asegurada -->
+    <ng-container matColumnDef="dni">
+      <th mat-header-cell *matHeaderCellDef> Documento </th>
+      <td mat-cell *matCellDef="let element"> {{element.dni}} </td>
+    </ng-container>
+
+        <!-- Columna domicilio -->
+        <ng-container matColumnDef="domicilio">
+            <th mat-header-cell *matHeaderCellDef> Domicilio </th>
+            <td mat-cell *matCellDef="let element"> {{element.domicilio}} </td>
+        </ng-container>
+
+
+    <!-- Columna eliminar -->
+    <ng-container matColumnDef="del">
+        <th mat-header-cell *matHeaderCellDef> Eliminar </th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-button color="warn" aria-label="icono boton para borrar una poliza">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+  
+  
