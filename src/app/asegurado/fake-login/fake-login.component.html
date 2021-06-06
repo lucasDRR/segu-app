@@ -1,0 +1,26 @@
+<div class="form-container">
+    <form id="fake-log" [formGroup]="fakelog" (ngSubmit)="onLogin(fakelog.value)">
+    
+        <mat-form-field appearance="fill">
+            <mat-label for="fname">Nombre</mat-label>
+            <input matInput type="text" id="fname" formControlName="nombre">
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill">
+            <mat-label for="lname">Apellido</mat-label>
+            <input matInput type="text" id="lname" formControlName="apellido">
+        </mat-form-field>
+    
+        <button mat-raised-button 
+                class="login-btn" 
+                color="primary" 
+                type="submit" 
+                [disabled]="!fakelog.valid">
+            Entrar
+        </button>
+    </form>
+</div>
+
+<div *ngIf="validUser">
+    <span class="user-not-found-error">Usuario no encontrado</span>
+</div>

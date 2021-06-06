@@ -7,6 +7,7 @@ import { SeguHomeComponent } from './segu-home/segu-home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialBlocksModule } from './material-blocks/material-blocks.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,7 @@ import { MaterialBlocksModule } from './material-blocks/material-blocks.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialBlocksModule
+    MaterialBlocksModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
