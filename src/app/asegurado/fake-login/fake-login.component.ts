@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Usuario } from '../usuario';
+import { Usuario } from '../models/usuario';
 
 @Component({
   selector: 'app-fake-login',
@@ -51,18 +51,13 @@ export class FakeLoginComponent implements OnInit {
       this.router.navigate(['asegurado', userId]);
 
     } else {
-
       this.resetFakelog();
     }
 
   }
 
   private resetFakelog(): void {
-
-    this.fakelog.reset({
-      nombre: ' ',
-      apellido: ' '
-    });
+    this.fakelog.reset();
     this.fakelog.updateValueAndValidity();
   }
 
