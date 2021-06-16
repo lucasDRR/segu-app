@@ -18,35 +18,27 @@
     text-align: center;
 }
 
-.amount-title {
+.sub-title-sml {
     font-size: 0.5;
     color: gray;
 }
 
-.pay-sub-title {
-    font-size: 0.5;
-    color: gray;
-}
 
-.total-amount {
+.currency-amount {
     font-size: 2rem;
     color: blueviolet;
     text-align: center;
 }
 
-.pay-amount {
-    font-size: 2rem;
-    color: blueviolet;
-    text-align: center;
-}
 
 .pay-type {
     font-size: 1.2rem;
     font-weight: 500;
     display: inline;
-    margin-right: 15px;
+    margin-right: 2rem;
 }
 
 .edit-btn {
     color: crimson;
+
 }
